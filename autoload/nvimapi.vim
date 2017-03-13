@@ -5,7 +5,7 @@ function! s:version() abort
     return ''
   endif
 
-  return matchstr(execute('silent version'), 'NVIM v\zs[0-9.]\+')
+  return matchstr(execute('silent version'), 'NVIM v\?\zs[0-9.]\+')
 endfunction
 
 function! s:show_buffer() abort
